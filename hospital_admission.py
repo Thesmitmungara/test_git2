@@ -27,4 +27,5 @@ class HospitalAdmission(models.Model):
         self.write({"discharge_date": fields.Datetime.now()})
 
     def action_mark_paid(self):
+        test
         self.write({"paid_amount": self.bill_amount})
